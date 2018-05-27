@@ -1,0 +1,31 @@
+.big {
+  color:red;
+  font-size: 2rem;
+  background: lightblue;
+}
+
+.circles{
+  margin-top: 20%;
+}
+
+.blue:hover{
+  cursor: pointer;
+}
+.red:hover{
+  cursor: pointer;
+}
+.blue{
+  margin:auto;
+  height: 250px;
+  width: 250px;
+  border: 2px solid black;
+  background: blue;
+}
+
+.red{
+  margin:auto;
+  height: 250px;
+  width: 250px;
+  border: 2px solid black;
+  background: red;
+}
