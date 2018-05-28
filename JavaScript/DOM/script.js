@@ -25,13 +25,25 @@
 
 
 
-var blue = document.querySelector(".blue");
-var red = document.querySelector(".red");
 
-red.addEventListener("click", function () {
-  red.style.background = "purple";
-});
+// This is the way I found out how to toggle
+// function myFunction() {
+//   var button = document.querySelector("button");
+//   var body = document.querySelector("body");
+//   if (body.style.background === "white") {
+//     body.style.background = "purple";
+//   }
+//   else {
+//     body.style.background = "white";
+//   }
+//
+// }
 
-blue.addEventListener("click", function () {
-  blue.style.background = "gold";
+// this is how I was taught to toggle
+
+// This was the shortest way ===============
+var button = document.querySelector("button");
+button.addEventListener("click", function () {
+    document.body.classList.toggle("purple");
+
 });
