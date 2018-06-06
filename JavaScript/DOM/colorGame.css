@@ -1,5 +1,7 @@
 body{
   background-color: #232323;
+  margin:0;
+  font-family: "Avenir";
 }
 
 .square {
@@ -8,21 +10,81 @@ body{
   background: purple;
   margin: 1.6%;
   float: left;
+  border-radius: 15%;
+  transition: background .5s;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+}
+
+.square:hover{
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-radius .2s;
+  -webkit-transition: border-radius .2s;
+  -moz-transition: border-radius .2s;
+
 }
 
 .container{
   max-width: 600px;
-  margin: auto;
+  margin: 20px auto;
 
+}
+
+.row {
+  max-width: 600px;
+  margin:auto;
 }
 h1 {
   color: white;
+  text-align: center;
+  background: steelblue;
+  margin:0;
+  text-transform: uppercase;
+  line-height: 1.1;
+  padding: 20px 0;
+
+}
+
+#colorDisplay {
+  font-size: 4rem;
 }
 
 
-
-#stripe {
+#strip {
   background: white;
   height: 30px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  color: steelblue;
+
+
+}
+
+.selected {
+  color: white;
+  background: steelblue;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+}
+
+button:hover{
+  color: white;
+  background: steelblue;
+  cursor: pointer;
 }
